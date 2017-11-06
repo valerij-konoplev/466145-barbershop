@@ -1,15 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Барбершоп "BORODINSKI"</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"  rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп "BORODINSKI"</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<!-- HEADER -->
 
-  </body>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+
+<!-- CONTENT -->
+
+  <main class="container">
+    <div class="index-logo">
+      <img src="images/index-logo.png" height="204" width="368" alt="Барбершоп БОРОДИНСКИЙ">
+    </div>
+    <section class="features clearfix">
+      <div class="features-item">
+        <b class="features-name">Быстро</b>
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Круто</b>
+        <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Дорого</b>
+        <p>Наши мастера — профессионалы своего дела и не могут стоить дешего. К тому же, разве цена не дает определеный статус?</p>
+      </div>
+    </section>
+    <section class="index-content clearfix">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Новости</h2>
+        <ul class="news-preview">
+          <li>
+            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="2016-01-18">25 Сентября</time>
+          </li>
+          <li>
+            <p>В нашей команде пополнение, Борис «БРИТВА» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2016-01-22">19 сентября</time>
+          </li>
+        </ul>
+        <a href="#" class="btn">Все новости</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Фотогалерея</h2>
+        <div class="gallery">
+          <figure class="gallery-content siema">
+            <img src="images/photo-1.png" height="164" width="286" alt="">
+            <img src="images/photo-1.png" height="164" width="286" alt="">
+            <img src="images/photo-1.png" height="164" width="286" alt="">
+          </figure>
+          <button class="btn gallery-prev prev" type="button">Назад</button>
+          <button class="btn gallery-next next" type="button">Вперед</button>
+        </div>
+      </div>
+    </section>
+    <section class="index-content clearfix">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Контактная информация</h2>
+        <p>
+          Барбершоп «БОРОДИНСКИЙ» <br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <p>
+          Время работы: <br>
+          ПН — ПТ: С 10:00 ДО 22:00 <br>
+          СБ — ВС: С 10:00 ДО 19:00
+        </p>
+        <a class="btn js-open-map" href="">Как проехать</a>
+        <a class="btn" href="">Обратная связь</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form class="appointment-form" action="#" method="post">
+          <input type="date" name="date" value="" placeholder="Дата">
+          <input type="time" name="time" value="" placeholder="Время">
+          <input type="text" name="name" value="" placeholder="Ваше имя">
+          <input type="tel" name="phone" value="" placeholder="Телефон">
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<!-- FOOTER -->
+
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-contacts">
+        Барбершоп «БОРОДИНСКИЙ» <br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
+        <a href="">Как нас найти?</a><br>
+        Телефон: +7 (495) 666-02-66
+      </section>
+      <section class="footer-soc">
+        <p>Давайте дружить!</p>
+        <a href="" class="call-btn icon-vk">Вконтакте</a>
+        <a href="" class="call-btn icon-fcbk">Фейсбук</a>
+        <a href="" class="call-btn icon-inst">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a href="#" class="btn">htmlacademy.ru</a>
+      </section>
+    </div>
+  </footer>
+
+<!-- POPUP -->
+
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <form class="login-form" action="#" method="post">
+      <input class="icon-user" type="text" name="login" placeholder="Логин">
+      <input class="icon-password" type="password" name="password" placeholder="Пароль">
+      <label class="checkbox">
+        <input type="checkbox" name="remember">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a class="restore" href="#">Я забыл пароль!</a>
+      <button class="btn" type="submit">Войти</button>
+    </form>
+  </div>
+
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!
+3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!
+2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!
+3m2!1sen!2s!4v1441888483426" width="766" height="561" frameborder="0"
+style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-overlay"></div>
+
+<!-- SCRIPT -->
+
+<script src="js/popup.js"></script>
+<script src="js/siema.js"></script>
+<script>
+  const mySiema = new Siema();
+  document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+  document.querySelector('.next').addEventListener('click', () => mySiema.next());
+</script>
+</body>
 </html>

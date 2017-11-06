@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
   <meta charset="UTF-8">
   <title>Барбершоп "BORODINSKI"</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="inner-page">
+</head>
+<body class="inner-page">
+
+<!-- HEADER -->
+
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="logo-inner" href="index.html"><img src="images/logo.png"></a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
-        <li class="active"><span>Магазин</span></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <a class="logo-inner" href="index.html"><img src="images/logo.png" width="111" height="24"></a>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li class="active"><a href="shop.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
       <div class="user-block">
         <a class="login" href="#">Вход</a>
       </div>
-    </nav>
+    </div>
   </header>
+
+<!-- MAIN -->
+
   <main class="container">
-    <h1>Набор для путешествий «Baxter of California»</h1>
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Магазин</a></li>
-      <li><a href="shop.html">Средства для ухода</a></li>
-      <li class="current">Набор для путешествий «Baxter of California»</li>
-    </ul>
-    <figure class="shop-item-gallery">
-      <img class="big-photo" src="images/shop-inner-big.jpg">
-      <img class="small-photo" src="images/shop-inner-small-1.png">
-      <img class="small-photo" src="images/shop-inner-small-2.png">
-      <img class="small-photo" src="images/shop-inner-small-3.png">
-    </figure>
-    <div class="shop-item-description">
-      <span>Есть в наличии</span>
-      <span class="text-grey">Артикул: dexter-ae</span>
-      <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумкенаходится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха:средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набортакже может стать отличным подарком.</p>
-      <div class="price">
-        <span>2 900 Руб.</span>
-        <button class="btn" type="button">Купить</button>
-      </div>
-      <b>В набор входят:</b>
-      <ul class="custom-list">
-        <li>Средство для умывания (50 мл)</li>
-        <li>Увлажняющий крем (50 мл)</li>
-        <li>Крем для бритья (50 мл)</li>
-        <li>Крем после бритья, шампунь (50 мл)</li>
-        <li>Удобная кожаная косметичка</li>
+    <div class="inner-page-title">
+      <h1>Набор для путешествий «Baxter of California»</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="shop.html">Средства для ухода</a></li>
+        <li class="current">Набор для путешествий «Baxter of California»</li>
       </ul>
     </div>
+    <div class="inner-columns clearfix">
+      <div class="inner-column-left">
+        <figure class="shop-gallery">
+          <img class="big-photo" src="images/shop-inner-big.jpg" width="450" height="478">
+          <img class="small-photo" src="images/shop-inner-small-1.png" width="140" height="149">
+          <img class="small-photo" src="images/shop-inner-small-2.png" width="140" height="149">
+          <img class="small-photo" src="images/shop-inner-small-3.png" width="140" height="149">
+        </figure>
+      </div>
+      <div class="shop-description">
+        <span>Есть в наличии</span>
+        <span class="text-grey">Артикул: dexter-ae</span>
+        <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        <div class="price">
+          <span>2 900 Руб.</span>
+          <button class="btn">Купить</button>
+        </div>
+        <b>В набор входят:</b>
+        <ul class="custom-list-1">
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
+      </div>
+    </div>
+
   </main>
+
+<!-- FOOTER -->
+
   <footer class="main-footer">
-    <div class="container">
-      <div class="footer-contacts">
+    <div class="container clearfix">
+      <section class="footer-contacts">
           Барбершоп «БОРОДИНСКИЙ» <br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
         <a href="">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
-      </div>
-      <div class="footer-soc">
+      </section>
+      <section class="footer-soc">
         <p>Давайте дружить!</p>
-        <a href="#" class="call-btn icon-vk">Вконтакте</a>
-        <a href="#" class="call-btn icon-fcbk">Фейсбук</a>
-        <a href="#" class="call-btn icon-inst">Инстаграм</a>
-      </div>
-      <div class="footer-copyright">
+        <a href="" class="call-btn icon-vk">Вконтакте</a>
+        <a href="" class="call-btn icon-fcbk">Фейсбук</a>
+        <a href="" class="call-btn icon-inst">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
         <p>Разработано:</p>
-        <a href="https://htmlacademy.ru" class="btn">htmlacademy.ru</a>
-      </div>
+        <a href="#" class="btn">htmlacademy.ru</a>
+      </section>
     </div>
   </footer>
-  </body>
+</body>
 </html>
